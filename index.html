@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bono 20% - WhatsApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src='https://connect.facebook.net/en_US/fbevents.js';
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script');
+    fbq('init', '982739704011729'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=982739704011729&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    header {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .logo-text {
+      color: #00ffcc;
+      font-weight: 800;
+      font-size: 28px;
+      text-shadow: 0 0 8px #00ffcc;
+    }
+
+    hr {
+      width: 100%;
+      border: none;
+      border-top: 1px solid #555;
+      margin: 20px 0;
+    }
+
+    .verified h2 {
+      font-size: 22px;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: #0ff;
+      text-shadow: 0 0 8px #0ff;
+    }
+
+    .verified .green {
+      color: #0f0;
+      font-weight: 700;
+      font-size: 18px;
+      text-shadow: 0 0 6px #0f0;
+    }
+
+    .message {
+      background: rgba(0, 255, 204, 0.1);
+      border: 1px solid #0ff;
+      padding: 18px;
+      border-radius: 12px;
+      margin: 20px 0;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .mensaje-bono {
+      background: rgba(255, 255, 0, 0.15);
+      border: 1px solid #ff0;
+      padding: 14px;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      color: #ff0;
+      text-shadow: 0 0 6px #ff0;
+    }
+
+    .whatsapp-button {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: white;
+      padding: 20px 34px;
+      border-radius: 45px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      box-shadow: 0 0 20px #25d366;
+      animation: pulse-glow 2s infinite;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px #25d366; }
+      50% { box-shadow: 0 0 35px #00ffcc; }
+    }
+
+    .whatsapp-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px #00ffcc;
+    }
+
+    .clientes {
+      background-color: #ff00cc;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      margin: 14px 0;
+      text-align: center;
+      box-shadow: 0 0 10px #ff00cc;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to right, #00ffcc, #ff00cc);
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 15px;
+      text-shadow: 0 0 5px #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-text">🎰 WhatsApp Bonos</div>
+    <img class="whatsapp-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" width="60" alt="WhatsApp Logo" />
+  </header>
+
+  <hr />
+
+  <section class="verified">
+    <h2>✅ Plataforma Verificada</h2>
+    <p class="green">💸 Bono Activo: ¡20% extra en tu primera carga!</p>
+  </section>
+
+  <div class="message">
+    Te estamos conectando con nuestro equipo vía WhatsApp 📲
+  </div>
+
+  <div class="mensaje-bono">
+    🎯 ¡Recibí un <strong>20% EXTRA</strong> en tu depósito inicial!  
+  </div>
+
+  <a class="whatsapp-button" 
+     href="https://wa.me/5491139056441?text=Hola%20quiero%20activar%20mi%20bono%20del%2020%25"  
+     target="_blank"
+     onclick="fbq('trackCustom', 'ClickWhatsApp')">
+    📲 ¡QUIERO MI BONO DEL 20%!
+  </a>
+
+  <div class="clientes">
+    👥 +10.000 CLIENTES APROVECHANDO SU BONO DEL 20%
+  </div>
+
+  <div class="footer">
+    🎁 ¡BONO ACTIVO! — 20% EXTRA EN TU PRIMER DEPÓSITO
+  </div>
+</body>
+</html>
